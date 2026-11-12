@@ -24,17 +24,34 @@ public class Loops {
 
     /** A1. Suma 1 + 2 + … + limit. Si limit es 0 o negativo, devuelve 0. */
     public static int sumTo(int limit) {
-        return 0; // TODO
+        int sumato = 0;
+
+        for (int i = 1; i <= limit; i++) {
+            sumato += i;
+        }
+        return sumato;
     }
 
     /** A2. number! = 1 × 2 × … × number, para number de 0 a 20. 0! es 1. */
     public static long factorial(int number) {
-        return 0; // TODO
+        long resultado = 1;
+
+        for (int i = 1; i <= number; i++) {
+            resultado *= i;
+        }
+        return resultado;
     }
 
     /** A3. Cantidad de dígitos de number. El 0 tiene un dígito; el signo no cuenta (-450 tiene 3). */
     public static int countDigits(int number) {
-        return 0; // TODO
+        int count = 1;
+        while (number / 10 != 0)
+        {
+            number=number/10;
+            count++;
+
+        }
+        return count;
     }
 
     /**
